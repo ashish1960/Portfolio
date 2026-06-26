@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ashish Chavan — Developer Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700;800&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== custom cursor dot ===== -->
+<div class="cursor-dot" id="cursorDot"></div>
+
+<!-- ===== nav ===== -->
+<nav class="navbar" id="navbar">
+  <div class="nav-inner">
+    <a href="#home" class="brand">
+      <span class="brand-bracket">&lt;</span>AC<span class="brand-bracket">/&gt;</span>
+    </a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-link active" data-section="home"><span class="nav-tag">01</span>home</a></li>
+      <li><a href="#about" class="nav-link" data-section="about"><span class="nav-tag">02</span>about</a></li>
+      <li><a href="#skills" class="nav-link" data-section="skills"><span class="nav-tag">03</span>skills</a></li>
+      <li><a href="#projects" class="nav-link" data-section="projects"><span class="nav-tag">04</span>projects</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact"><span class="nav-tag">05</span>contact</a></li>
+    </ul>
+   
+  </div>
+</nav>
+
+<!-- ===== hero / terminal ===== -->
+<header class="hero" id="home">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-eyebrow">// BCA graduate, 2025 · based in Pune, IN</p>
+      <h1 class="hero-title">
+        Ashish Chavan
+      </h1>
+      <p class="hero-role">
+        <span class="role-static">I build with </span><span class="role-typed" id="typedRole"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc">
+        Full-stack leaning developer who likes turning blank files into things that
+        actually run — storefronts, billing systems, and the odd restaurant site.
+      </p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">view_projects</a>
+       
+      </div>
+    </div>
+
+    <div class="hero-editor">
+      <div class="editor-window">
+        <div class="editor-titlebar">
+          <div class="editor-dots"><span></span><span></span><span></span></div>
+          <span class="editor-filename">about_me.js</span>
+        </div>
+        <div class="editor-body">
+          <pre><code><span class="ln">1</span><span class="tok-kw">const</span> <span class="tok-var">developer</span> = {
+<span class="ln">2</span>  <span class="tok-key">name</span>: <span class="tok-str">'Ashish Chavan'</span>,
+<span class="ln">3</span>  <span class="tok-key">education</span>: <span class="tok-str">'BCA, 2025'</span>,
+<span class="ln">4</span>  <span class="tok-key">location</span>: <span class="tok-str">'Pune, India'</span>,
+<span class="ln">5</span>  <span class="tok-key">stack</span>: [<span class="tok-str">'Java'</span>, <span class="tok-str">'MySQL'</span>,
+<span class="ln">6</span>          <span class="tok-str">'HTML'</span>, <span class="tok-str">'CSS'</span>],
+<span class="ln">7</span>  <span class="tok-key">status</span>: <span class="tok-str">'open_to_work'</span> <span class="tok-comment">// true</span>
+<span class="ln">8</span>};
+<span class="ln">9</span>
+<span class="ln">10</span><span class="tok-kw">function</span> <span class="tok-fn">hire</span>(<span class="tok-var">developer</span>) {
+<span class="ln">11</span>  <span class="tok-kw">return</span> <span class="tok-str">"great decision."</span>;
+<span class="ln">12</span>}</code></pre>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-cue">
+    <span>scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ===== about ===== -->
+  <section class="section about" id="about">
+    <div class="section-head">
+      <span class="section-tag">02 / about</span>
+      <h2 class="section-title">Who's writing the code</h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-card profile-card">
+        <div class="profile-avatar">AC</div>
+        <h3>Ashish Chavan</h3>
+        <p class="profile-role">BCA Graduate · Aspiring Developer</p>
+        <ul class="profile-meta">
+          <li><span class="meta-label">Birthday</span><span class="meta-value">23 Aug 2004</span></li>
+          <li><span class="meta-label">Location</span><span class="meta-value">Pune, India</span></li>
+          <li><span class="meta-label">Education</span><span class="meta-value">BCA, completed 2025</span></li>
+          <li><span class="meta-label">Email</span><span class="meta-value">ashishchavan196@gmail.com</span></li>
+        </ul>
+      </div>
+
+      <div class="about-card story-card">
+        <p class="story-quote">"I like software that has to <em>balance a ledger</em>, <em>track a cart</em>, or <em>hold a table booking</em> — real constraints, not toy demos."</p>
+        <p class="story-body">
+          I completed my Bachelor of Computer Applications in 2025, and along the way built
+          a handful of projects that forced me to actually learn the messy parts of
+          development — schema design, session handling, billing logic, and making a
+          page look right on a screen smaller than mine.
+        </p>
+        <p class="story-body">
+          I'm comfortable across the stack: Java and MySQL on the backend, clean
+          HTML/CSS on the front, and enough JavaScript to make things feel alive.
+          Right now I'm looking for a team where I can keep shipping and keep learning.
+        </p>
+        <div class="story-stats">
+          <div class="stat">
+            <span class="stat-num" data-count="4">0</span>
+            <span class="stat-label">Projects built</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="2025">0</span>
+            <span class="stat-label">Graduated</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num" data-count="3">0</span>
+            <span class="stat-label">Languages used</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== skills ===== -->
+  <section class="section skills" id="skills">
+    <div class="section-head">
+      <span class="section-tag">03 / skills</span>
+      <h2 class="section-title">What's in the toolbox</h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon-row">
+          <span class="skill-icon">☕</span>
+          <span class="skill-percent">85%</span>
+        </div>
+        <h3>Java</h3>
+        <p>Core language for backend logic, JSP-based web apps, and OOP-driven projects.</p>
+        <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-row">
+          <span class="skill-icon">🗄️</span>
+          <span class="skill-percent">80%</span>
+        </div>
+        <h3>MySQL</h3>
+        <p>Schema design, queries, and joins behind real order and billing systems.</p>
+        <div class="skill-bar"><div class="skill-fill" data-fill="80"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-row">
+          <span class="skill-icon">🧱</span>
+          <span class="skill-percent">90%</span>
+        </div>
+        <h3>HTML</h3>
+        <p>Semantic, accessible markup as the backbone of every page I ship.</p>
+        <div class="skill-bar"><div class="skill-fill" data-fill="90"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-row">
+          <span class="skill-icon">🎨</span>
+          <span class="skill-percent">85%</span>
+        </div>
+        <h3>CSS</h3>
+        <p>Layouts with Flexbox/Grid, responsive design, and small UI frameworks.</p>
+        <div class="skill-bar"><div class="skill-fill" data-fill="85"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-row">
+          <span class="skill-icon">🧩</span>
+          <span class="skill-percent">70%</span>
+        </div>
+        <h3>CSS Frameworks</h3>
+        <p>Comfortable working with basic frameworks to speed up styling work.</p>
+        <div class="skill-bar"><div class="skill-fill" data-fill="70"></div></div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-icon-row">
+          <span class="skill-icon">⚡</span>
+          <span class="skill-percent">65%</span>
+        </div>
+        <h3>JavaScript</h3>
+        <p>DOM interaction, form logic, and the small touches that make a UI feel alive.</p>
+        <div class="skill-bar"><div class="skill-fill" data-fill="65"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== projects ===== -->
+  <section class="section projects" id="projects">
+    <div class="section-head">
+      <span class="section-tag">04 / projects</span>
+      <h2 class="section-title">Things I've shipped</h2>
+    </div>
+
+    <div class="projects-list">
+
+      <article class="project-row" id="proj-01">
+        <div class="project-media">
+          <img src="images/project1.png" alt="Sports Equipment e-commerce website home page">
+        </div>
+        <div class="project-info">
+          <span class="project-index">Project 01</span>
+          <h3>Sports Equipment Store</h3>
+          <p class="project-desc">
+            A full e-commerce site for sports gear — product browsing, cart, and order
+            management with user accounts. Built the backend logic in Java/JSP with a
+            MySQL database handling products and orders.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Java</span>
+            <span class="tag">JSP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">E-commerce</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row reverse" id="proj-02">
+        <div class="project-media">
+          <img src="images/project2.png" alt="Hotel billing software order dashboard">
+        </div>
+        <div class="project-info">
+          <span class="project-index">Project 02</span>
+          <h3>Hotel Billing Software</h3>
+          <p class="project-desc">
+            A point-of-sale and billing system for hotels — token-based order tracking,
+            self-service and parcel order types, live sales totals, and a full order
+            history. Built in C# with a focus on accurate, real-time billing.
+          </p>
+          <div class="project-tags">
+            <span class="tag">C#</span>
+            <span class="tag">POS System</span>
+            <span class="tag">Billing</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row" id="proj-03">
+        <div class="project-media">
+          <img src="images/project3.png" alt="Wrap n Eat restaurant static website home page">
+        </div>
+        <div class="project-info">
+          <span class="project-index">Project 03</span>
+          <h3>Restaurant Website — "Wrap n Eat"</h3>
+          <p class="project-desc">
+            A static restaurant website with a clean menu layout, offers section, and
+            an appetite-driving hero image. Hand-built with semantic HTML and custom
+            CSS, no frameworks.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Static Site</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-row reverse" id="proj-04">
+        <div class="project-media">
+          <img src="images/project4.png" alt="Muscle Major Gym fitness club website">
+        </div>
+        <div class="project-info">
+          <span class="project-index">Project 04</span>
+          <h3>Gym Website — "Muscle Major"</h3>
+          <p class="project-desc">
+            A fitness club landing page showcasing training categories — running,
+            personal training, weight loss — with a card-based grid layout. Built with
+            HTML and CSS for a fast, clean browsing experience.
+          </p>
+          <div class="project-tags">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">Landing Page</span>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="contact-card">
+      <div class="section-head" style="text-align:center; margin-bottom: 0;">
+        <span class="section-tag" style="justify-content:center;">05 / contact</span>
+        <h2 class="section-title">Let's build something</h2>
+      </div>
+      <p class="contact-desc">
+        Have a role, a project, or just want to talk shop about Java and MySQL? My
+        terminal — and inbox — are both open.
+      </p>
+
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:ashishchavan196@gmail.com">
+          <span class="contact-icon">✉</span>
+          <span class="contact-text">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">ashishchavan196@gmail.com</span>
+          </span>
+        </a>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span class="contact-text">
+            <span class="contact-label">Location</span>
+            <span class="contact-value">Pune, Maharashtra, India</span>
+          </span>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">🎓</span>
+          <span class="contact-text">
+            <span class="contact-label">Education</span>
+            <span class="contact-value">BCA, Completed 2025</span>
+          </span>
+        </div>
+      </div>
+
+     
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <p>&copy; <span id="year"></span> Ashish Chavan. Built with HTML, CSS &amp; JavaScript.</p>
+  <button class="to-top" id="toTop" aria-label="Back to top">↑</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
